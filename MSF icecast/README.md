@@ -1,4 +1,3 @@
-# lab  
 
 ## run icecast en admin sur le windows
 

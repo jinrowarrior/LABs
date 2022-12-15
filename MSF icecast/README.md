@@ -1,5 +1,5 @@
 
-## run icecast en admin sur windows
+## run icecast with admin priv on windows
 
 
 	smfconsole  

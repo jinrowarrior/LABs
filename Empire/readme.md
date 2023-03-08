@@ -1,7 +1,7 @@
+##Empire
+
 ps-empire serveur
 ps-empire client
-
-#agent , listener , usermodule 
 
 #llisteners context
 listeners
@@ -11,12 +11,11 @@ back
 #créer un listener
 uselistener <wait> 
 
-	-killdate - temp de vie du listener
-	-stagingkey -  key pour chiffrer les communications entre l'agent et le listener 
-	-workinghours - limite le temps d'activité du listener
-	-defaultdelay - specifie le delais de reponse ( les agents ne sont pas synchronisés)
-	
-# par defaut 5s (l'agent demande des renseignement au listener) , IP deja mise, port 80
+* killdate - temp de vie du listener
+* stagingkey -  key pour chiffrer les communications entre l'agent et le listener 
+* workinghours - limite le temps d'activité du listener
+* defaultdelay - specifie le delais de reponse ( les agents ne sont pas synchronisés)
+ par defaut 5s (l'agent demande des renseignement au listener) , IP deja mise, port 80
 
 set DefaultDelay 1
 set Port 9999
@@ -43,16 +42,16 @@ info
 
 #modules
 usemodule <tab> 
-	• code_execution: These modules let you run code, including Metasploit payloads, on the target box. collection: These modules let you pillage information from the target machine.
-	• credentials: These modules let you plunder usernames, hashes, and passwords from the target.
-	• exploitation: These modules let you exploit additional targets.
-	• lateral_movement: These modules let you pivot to other target machines.
-	• management: These modules are associated with system administration functions on the target.
-	• persistence: These modules will make your agent survive across user logoff or reboot.
-	• privesc: These modules provide privilege escalation exploits.
-	• recon: These are the reconnaissance modules.
-	• situational_awareness: These modules pull information from the target environment, including scanners and related tools.
-    • trollsploit : troll, play audio, pop dialog
+	*  code_execution: These modules let you run code, including Metasploit payloads, on the target box. collection: These modules let you pillage information from the target machine.
+	* credentials: These modules let you plunder usernames, hashes, and passwords from the target.
+	* exploitation: These modules let you exploit additional targets.
+	* lateral_movement: These modules let you pivot to other target machines.
+	* management: These modules are associated with system administration functions on the target.
+	* persistence: These modules will make your agent survive across user logoff or reboot.
+	* privesc: These modules provide privilege escalation exploits.
+	* recon: These are the reconnaissance modules.
+* situational_awareness: These modules pull information from the target environment, including scanners and related tools.
+    * trollsploit : troll, play audio, pop dialog
     
     
 usemodule <wait> 

